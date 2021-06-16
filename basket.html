@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8" />
+        <script src="https://kit.fontawesome.com/4cd4d06df2.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" type="img/jpg" href="img/favicon-cam.png">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
+        <meta name="description" content="Orinoco spécialiste en appareils photos professionels et de collection" />
+        <title>Panier</title>
+      </head>
+
+<body>
+  <header>
+    <img class="logo" src="img/logoss.png" alt="orinocologo" />
+    <nav>
+      <a href="../index.html"> Accueil <i class="fas fa-store"></i></a>
+    </nav>
+  </header>
+
+  <div class="image-bandeau">
+    <img src="img/BANNER.jpg" alt="image-bandeau" />
+    <div class="texte-bandeau">
+      <h1>OrinoCam</h1>
+      <p>Pour passer commande</p>
+    </div>
+  </div>
+
+  <form action="#" method="POST" id="form">
+    <div>
+      <input type="radio" id="Mr" name="drone" value="Mr" checked>
+      <label for="Mr">Mr</label>
+
+      <input type="radio" id="Mme" name="drone" value="Mme">
+      <label for="Mme">Mme</label>
+    </div>
+
+    <div>
+      <label for="nom">Nom *:</label><br />
+      <input type="text" id="nom" name="nom" required="required" placeholder="Leo" />
+    </div>
+
+    <div>
+      <label for="prenom">Prenom *:</label><br />
+      <input type="text" id="prenom" name="prenom" required="required" placeholder="Martin" />
+    </div>
+
+    <div>
+      <label for="adresse">Adresse *:</label><br />
+      <input type="text" id="adresse" name="adresse" required="required" placeholder="3 rue des cerises" />
+    </div>
+
+    <div>
+      <label for="ville">Ville *:</label><br />
+      <input type="text" id="ville" name="text" required="required" placeholder=" Nice "
+        pattern="^[a-zA-Z]{1}[a-zA-Z'À-ÿ -]+$" />
+    </div>
+
+    <div>
+      <label for="email">E-mail *:</label><br />
+      <input type="email" id="email" name="email" required="required" placeholder="martin@yahoo.fr"
+        pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}" />
+    </div>
+
+    <input type="submit" value="Commander" id="envoiFormulaire" />
+
+    <p>* Champ Obligatoire</p>
+  </form>
+
+  <section class="recap-commande">
+    <table id="container">
+
+      <thead>
+        <tr>
+          <th class="srcimage">Photos</th>
+          <th>Nom</th>
+          <th>Prix Unitaire</th>
+          <th>Quantitée</th>
+          <th>Supprimer</th>
+          <th>Prix Total</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>TOTAL</td>
+        <td id="prixTotal"></td>
+      </tr>
+      </tfoot>
+      
+    </table>
+
+    <button id="viderPanier" class="viderPanier">Vider tous le Panier </button>
+  </section>
+
+
+  <footer>
+    <div class="container-f">
+      <ul class="flex-row">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+      </ul>
+      <ul class="flex-row">
+        <li>
+          <i class="fab fa-twitter"></i>
+        </li>
+        <li>
+          <i class="fab fa-instagram"></i>
+        </li>
+        <li>
+          <i class="fab fa-facebook"></i>
+        </li>
+      </ul>
+      <p>&copy; 2021 OrinoCam</p>
+    </div>
+  </footer>
+  <script src="class.js"></script>
+  <script src="basket.js"></script>
+</body>
+
+</html>
